@@ -18,7 +18,7 @@ public class DiscordBot extends ListenerAdapter {
 
 
     public static void main(String[] args)  {
-        String apiToken = "MTAyMTU5NTMzNjAxMzI2Njk4Ng.GHRHb0.baXVH-A51bnpBCuX30Jw4EL-wnxztIwOe9iHgk";
+        String apiToken = config.API_token;
         //The main method creates the JDA object "bot". This object is used to apply the api key. As well as assign the discord
         //bot with any intents such as managing messages, calls, or anything else.
         JDA bot = JDABuilder.createDefault(apiToken)
